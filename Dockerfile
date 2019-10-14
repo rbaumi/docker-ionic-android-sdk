@@ -3,10 +3,10 @@ FROM ubuntu:xenial
 LABEL MAINTAINER="Rafal Baumann <rafal.baumann@gmail.com>"
 
 ARG NODEJS_VERSION="10"
-ARG IONIC_VERSION="4.2.1"
-ARG ANDROID_SDK_VERSION="3859397"
+ARG IONIC_VERSION="5.2.3"
+ARG ANDROID_SDK_VERSION="4333796"
 ARG ANDROID_HOME="/opt/android-sdk"
-ARG ANDROID_BUILD_TOOLS_VERSION="28.0.3"
+ARG ANDROID_BUILD_TOOLS_VERSION="29.0.0"
 
 # 1) Install system package dependencies
 # 2) Install Nodejs/NPM/Ionic-Cli
@@ -43,7 +43,3 @@ RUN apt-get update \
     && mkdir /ionicapp
 
 WORKDIR /ionicapp
-
-
-
-    
