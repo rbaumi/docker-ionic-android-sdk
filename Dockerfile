@@ -23,6 +23,7 @@ RUN apt-get update \
        openjdk-8-jre \
        openjdk-8-jdk \
        curl \
+       zip \
        unzip \
        git \
        gradle \
